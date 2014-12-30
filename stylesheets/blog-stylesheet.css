@@ -1,41 +1,32 @@
-#holder{
+article{
 	border-left: 3px solid silver;
 	border-right: 3px solid silver;
-	margin: 0 50px;
+	padding: 0 15px;
+	color: #010A0A;
+	font-size: 20px;
 }
 
-#post_title{
+header h1{
 	font-weight: bold;
 	text-align: center;	
-	background-color: pink;
 	font-family: sans-serif;
 	font-size: 30px;
-	margin: 0 50px;
 }
 
-#subtitle{
-	background-color: violet;
+header h2{
+
 	font-weight: bold;
 	text-align: center;
 	font-family: serif;
-	margin: -30px 50px 0 50px;
 	font-size: 22px;
 }
 
 
 
-#date{
-	background-color: green;
-	text-align: right;
+header h3{
 	padding-right: 70px;
-	margin: 0 50px 0 50px;
+	text-align: right;
 	font-size: 20px;
 }
 
-#content{
-	margin: 0 5px ;
-	padding: 0;
-	color: #001F7A;
-	font-size: 20px;
-}
 
