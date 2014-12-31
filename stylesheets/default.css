@@ -1,49 +1,95 @@
 section#container {
-  width:800px;
+  width:900px;
   margin: 0 auto;
+  font-family: arial;
 }
-
 
 header {
-  font-size: 20px;
-  text-align: center;
-  border: 1px solid black;
-  width: 100%;
-  background-color: #FF694B;
-}
-
-section#pic {
-  float: left;
+  border-top: 2px solid black;
+  border-bottom: 1px solid black;
+  width:860px;
   margin-top: 20px;
-  width: 60%
+  padding: 20px;
 }
 
-section#pic #profile-pic {
-  width: 100%;
+header h1 {
+  font-size: 50px;
+  margin: 0px;
+}
+
+header h2 {
+  font-size: 25px;
+  font-weight: normal;
+  display: inline-block;
+  margin: 0px;
+  margin-left: 2px;
+}
+
+header h3 {
+  font-size: 15px;
+  color: #aaaaaa;
+  font-weight: normal;
+  display: inline-block;
+  margin-left: 5px;
+  margin: 10px;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  margin: 0px;
+  width: 600px;
 }
 
 section#pic h2 {
   display: none;
+  margin: 0px;
 }
 
-nav li {
+nav {
   float: right;
-  border: 1px solid black;
-  clear: right;
-  margin-top: 20px;
-  width: 38%;
-  height: 202px;
+  padding-top: 20px;
+  width: 200px;
 }
 
-nav li#myblogs {
-  background-color: #FFD548;
+nav ul {
+  list-style-type: none;
+  padding-left: 10px;
+  margin: 5px;
 }
 
-nav li#myprojects {
-  background-color: #E3E837;
+nav menu {
+  color: #e70;
+  padding: 5px;
+  font-size: 16px;
 }
 
-nav li#contact {
-  background-color: #5FFF43;
+nav ol {
+  padding-left: 30px;
+  color: #555;
+  margin: 5px;
+}
+
+nav ol#submenu li {
+  font-weight: normal;
+  border-bottom: 0px; 
+  font-size: 14px;
+}
+
+nav ol#submenu a {
+  text-decoration: none;
+  color: #555;
+}
+
+nav ol#submenu a:hover {
+  color: #e70;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 2px solid black;
+  width: 100%;
 }
 
