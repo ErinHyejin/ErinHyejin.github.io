@@ -29,3 +29,13 @@ article h4 {
   color: #e70;
   border-bottom: 1px solid #e70; 
 }
+
+
+article figure figcaption {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  color:#999;
+  font-size: 12px;
+  width: 70%
+}

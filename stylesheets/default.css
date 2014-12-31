@@ -44,29 +44,27 @@ article {
   float: left;
   padding: 20px;
   margin: 0px;
-  width: calc(100% - 190px);
+  width: calc(100% - 240px);
 }
 
 article p {
   clear: both;
 }
-
+article figure {
+  width: 100%;
+  padding: 0px;
+  margin: 10px 0px;
+}
 article figure img {
   display: block;
-  margin: 10px auto;
-}
-
-article figure figcaption {
-  display: block;
-  margin: 10px auto;
-  text-align: center;
+  margin: 0 auto;
 }
 
 
 nav {
   float: right;
   padding-top: 20px;
-  width: 150px;
+  width: 200px;
 }
 
 nav ul {
