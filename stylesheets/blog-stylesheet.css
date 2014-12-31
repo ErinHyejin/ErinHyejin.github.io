@@ -1,3 +1,31 @@
+
 article h1 {
-	font-size: 30px;
+  font-size: 30px;
+  color: #e70;
+}
+
+article h2 {
+  float: left;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0px;
+  margin: 0px 0px 20px 0px;
+  color: #555;
+}
+
+article h3 {
+  float: right;
+  line-height: 30px;
+  padding: 0px;
+  margin: 0px 0px 20px 0px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+article h4 {
+  clear: both;
+  margin: 40px 0px 20px 0px;
+  padding-bottom: 8px;
+  color: #e70;
+  border-bottom: 1px solid #e70; 
 }
