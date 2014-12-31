@@ -1,5 +1,6 @@
 section#container {
-  width:900px;
+  width:90%;
+  display: block;
   margin: 0 auto;
   font-family: arial;
 }
@@ -7,9 +8,14 @@ section#container {
 header {
   border-top: 2px solid black;
   border-bottom: 1px solid black;
-  width:860px;
+  width: calc(100% - 40px);
   margin-top: 20px;
   padding: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
 }
 
 header h1 {
@@ -38,13 +44,22 @@ article {
   float: left;
   padding: 20px;
   margin: 0px;
-  width: 600px;
+  width: calc(100% - 240px);
 }
 
-section#pic h2 {
-  display: none;
-  margin: 0px;
+article p {
+  clear: both;
 }
+article figure {
+  width: 100%;
+  padding: 0px;
+  margin: 10px 0px;
+}
+article figure img {
+  display: block;
+  margin: 0 auto;
+}
+
 
 nav {
   float: right;
@@ -91,5 +106,11 @@ footer {
   border-top: 1px solid black;
   border-bottom: 2px solid black;
   width: 100%;
+  margin-bottom: 20px;
+}
+
+footer .social {
+  margin: 10px;
+  width: 50px;
 }
 
