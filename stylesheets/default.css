@@ -7,7 +7,7 @@ section#container {
 
 header {
   border-top: 2px solid red;
-  border-bottom: 1px solid #e70;
+  border-bottom: 1px solid red;
   width: calc(100% - 40px);
   margin-top: 20px;
   padding: 20px;
@@ -103,8 +103,8 @@ nav ol#submenu a:hover {
 footer {
   clear: both;
   text-align: center;
-  border-top: 1px solid black;
-  border-bottom: 2px solid black;
+  border-top: 1px solid red;
+  border-bottom: 2px solid red;
   width: 100%;
   margin-bottom: 20px;
 }
