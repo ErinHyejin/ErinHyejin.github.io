@@ -6,8 +6,8 @@ section#container {
 }
 
 header {
-  border-top: 2px solid black;
-  border-bottom: 1px solid black;
+  border-top: 2px solid red;
+  border-bottom: 1px solid #e70;
   width: calc(100% - 40px);
   margin-top: 20px;
   padding: 20px;
