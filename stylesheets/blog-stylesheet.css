@@ -2,15 +2,6 @@ article {
   width: calc(100% - 40px);
 }
 
-
-
-article {
-  float: left;
-  padding: 20px;
-  margin: 0px;
-  width: calc(100% - 240px);
-}
-
 article p {
   clear: both;
 }
