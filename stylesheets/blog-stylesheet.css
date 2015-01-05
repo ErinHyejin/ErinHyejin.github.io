@@ -1,6 +1,7 @@
 article {
-  width: calc(100% - 40px);
+  padding: 20px;
 }
+
 
 article p {
   clear: both;
