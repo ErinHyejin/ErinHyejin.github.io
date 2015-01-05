@@ -2,6 +2,29 @@ article {
   width: calc(100% - 40px);
 }
 
+
+
+article {
+  float: left;
+  padding: 20px;
+  margin: 0px;
+  width: calc(100% - 240px);
+}
+
+article p {
+  clear: both;
+}
+article figure {
+  width: 100%;
+  padding: 0px;
+  margin: 10px 0px;
+}
+article figure img {
+  display: block;
+  margin: 0 auto;
+}
+
+
 article h1 {
   font-size: 30px;
   color: #e70;
