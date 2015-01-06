@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+    <title>Erin's Home</title>
+  </head>
+
+  <section id="container">
+    <header>
+      <a href="../index.html">
+        <h1>Erin</h1>
+        <h2>Hyejin Kim</h2>
+        <h3>A journey from an education major to a software engineer</h3>
+      </a>
+    </header>
+
+    <article> 
+ 
+      <h1>What is Git?</h1>
+      <h2>What do you mean, 'It's a version control'?</h2>
+      <h3>Dec 13, 2014</h3>
+ 
+      <p>
+        Version control is keeping track of all files and saving history changes. Users can go back and forth between changes and start work from where they want anytime. Version control also enable users to collaborate on a same project and let others know how the project has changed and developed.
+      </p>
+
+      <p>  
+        Since developers sometimes write long codes as a team, version control is important for them to prevent errors and merge each other's code smoothly. Even a developer works on his/her own code, when he/she found any code conflict or bugs, tracking changes allows the developer to go back to the previous version of the code anytime and work from it. 
+      </p>
+
+      <figure>
+        <img src = "imgs/t1-git-blog.png" width ="400"> 
+        <figcaption> Image courtesy of https://www.sonassi.com/knowledge-base/our-magento-git-guide-and-work-flow/.</figcaption>
+      </figure>
+
+      <h4>How Does Git Keep Track of Changes?</h4>
+      <p>
+        Git is one of the version control systems that keep changes of a work.
+        Let's look closely how git keeps track of changes. 
+      </p>
+
+      <p>
+         There are three - working, staged, and commit -stages of a git change. 
+         <UL>
+         <LI> Working stage: in a working stage, users can make changes on files and save them. To move a changed file from working stage to the next stage, you can simply type "git add file_name" in terminal. </LI>
+         <LI> Staged stage: the files added to the staged stage are saved and ready to move to the commit stage. </LI>
+         <LI> Commit stage: once you decide to apply the changes in the staged stage, you can type "git commit -m "Commit_message"". It is important to leave a commit message that indicates what changes you have made, because you will see the history of changes easily. This command, 'Commit', creates a package of changes to push or merge with master later. </LI>
+
+        </UL>
+
+        When you type "git status", you will see what kind of changes you have made and in which stage each changes are now. Another command "git log" shows the history of changes you committed. 
+      </p>
+
+      <h4>GitHub</h4>
+
+       <p>
+      Github is an online hub that programmers can share code and collaborate on a project at the same time. Like Dropbox, when you have the internet access and a computer, you can work on your project on GitHub anytime. You can share the files at your local computer on Github and other people can see how's your work going. 
+      </p>
+
+    </article>
+
+    
+    <footer>
+      <a href="https://twitter.com/erin_hyejin"><img class="social" src="../imgs/Twitter-icon.png"></a>
+
+      <a href="https://www.linkedin.com/pub/erin-hyejin-kim/18/626/707"><img class="social" src="../imgs/LinkedIn-icon.png"></a>
+    </footer>
+  </section>
+</html>
+
