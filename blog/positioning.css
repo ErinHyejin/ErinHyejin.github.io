@@ -1,0 +1,18 @@
+#A1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#B {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+}
+
+
+#C {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
