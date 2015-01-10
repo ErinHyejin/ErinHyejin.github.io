@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+    <title>Erin's Home</title>
+  </head>
+
+  <section id="container">
+    <header>
+      <section id="icon">   
+      <a href="https://twitter.com/erin_hyejin"><img class="social" src="../imgs/twitter.png"></a>   
+    
+      <a href="https://www.linkedin.com/pub/erin-hyejin-kim/18/626/707"><img class="social" src="../imgs/linkedin.png"></a>    
+    
+      <a href="mailto:lvhrhj@gmail.com"><img class="social" src="../imgs/email.png"></a>   
+      </section>
+      <a href="../index.html">
+        <h1>Erin</h1>
+        <h2>Hyejin Kim</h2>
+        <h3>A journey from an education major to a software engineer</h3>
+      </a>
+    </header>
+
+  
+  <article>
+    <h4>Array</h4>
+     
+     <p> 
+      <b>Array</b> is ordered collections of data. <br><br>
+      It looks like this: [ ] <br>
+      When you make an empty array, just type
+      "array_name = []" as you see on the right
+      in your text editor.
+      <figure><img  src = "imgs/array0.png"><figcaption>Creating a new array called "words"</figcaption></figure>
+       
+
+    </p>   
+       When we call a specific data, we can use index. From the beginning, index 0, index number increments by 1. 
+    </p>
+
+      <figure><img src = "imgs/array1.png"><figcaption>Creating an array "words" and pulling out the data </figcaption></figure>
+      
+      <figure><img src = "imgs/array1_res.png"><figcaption>result</figcaption><figure>
+
+
+    <p>
+       Also, a negative index is used to call data from the end of the array. For example, 
+    </p>
+
+     <figure><img src = "imgs/array2.png"><figcaption>Pulling out the data using negative index</figcaption></figure>
+
+     <figure><img src = "imgs/array2_res.png"><figcaption>result</figcaption><figure>
+
+    <p>
+       array[-1] = 'Desk' 
+       array[-2] = 'Cookie' 
+       array[-3] = 'Bread'
+       array[-4] = 'Air'
+    </p>
+
+    <p>
+      If you want to select the last item in the array and do not know how many items are in the array, just use a negative index. 
+    </p>
+
+    <p>What is you want to add items in an array? It is simple! 
+     <b>array.push item_name</b> or <b>array[specific_index] = item_name </b>
+
+
+    <p>
+    Though array is useful in many ways, it is not good for searching an item from tremendous amount of data. To search the item, we should go over the array one by one, which takes long time. Is there any alternative way? Yes, it is <b>hash</b>! 
+    </p>
+
+    <h4>Hash</h4>
+    <p> 
+       A hash looks like this: { }<br>
+       A hash is a collection of key-value pairs and the pairs are not ordered lists. In other words, you cannot use index to pull out specific data from a hash. 
+       <br><br>
+
+       Creating a new empty hash is simple: 
+       "hash_name = {}"
+       When you want to insert a certain pair in the hash, simply type "hash_name [key] = value". 
+      <figure><img src= "imgs/hash0.png"> 
+
+      <figcaption>Hash: how many cookies you can it</figcaption></figure>
+      <figure><img src= "imgs/hash0_res.png"><figcaption> Result of the code </figcaption></figure>
+    </p>
+
+    <p>
+    To search specific data, instead of using index, use keys. For example, 
+    If you 
+      찾으려고 하면 index대신 key 로 찾아라. 
+      Let's make a hash to 
+
+    </p>   
+      sort는 array만 가능. key만 뽑아서 알파벳 순 / value만 뽑아서 정렬하고 싶으면 
+      hash.keys or hash.values하고 이 자체가 새로운 array를 만드니까 이걸로 sort하면 됨.   
+      
+    </p>
+    <footer></footer>
+  </article>
+</section>
+

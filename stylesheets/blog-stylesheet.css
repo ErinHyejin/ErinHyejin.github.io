@@ -57,3 +57,7 @@ article figure figcaption {
   font-size: 12px;
   width: 70%
 }
+
+.right {
+  float: right;
+}
