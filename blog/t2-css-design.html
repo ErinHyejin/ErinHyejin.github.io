@@ -1,165 +1,174 @@
 <!DOCTYPE html>
-<head>
-  <title>Thinking about DBC</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+    <title>Erin's Home</title>
+  </head>
 
-</head>
+  <section id="container">
+    <header>
+      <a href="../index.html">
+        <h1>Erin</h1>
+        <h2>Hyejin Kim</h2>
+        <h3>A journey from an education major to a software engineer</h3>
+      </a>
+    </header>
 
-
-<section id="container">
-
-  <header>
-    <h1>How do I feel about DBC experience?</h1>
-    <h2>After watching the fireside chat</h2>
-    <h3>Dec 13, 2014</h3>
-  </header>
-
-  <article>
+    <article> 
  
-    <h1>CSS Positioning</h1>
-    <h2>What are the differences between static, fixed, relative, and absolute positioning?</h2>
-    <h3>Dec 30, 2014</h3>
-
-    <p>
-      CSS positioning is a useful property to make complex layouts on your page. However, it is not easy to understand how different positioning works, especially for css beginners. 
-    </p>
-
-    <p>
-      Let's figure out how to position elements using different positioning. CSS has 4 positioning methods: static, relative, absolute, and fixed positioning. I created an html file and will go through one by one.
-    </p>
-    
-    <figure>
-      <img src="imgs/positioning_html.png">
-      <figcaption> Figure 0. Positioning.html</figcaption>
-    </figure>
-
-    
-
-    <h4>1. Static positioning</h4>
-      <figure>
-      <img src="imgs/static.png">
-      <figcaption> Figure 1. Static Positioning</figcaption>
-    </figure>
-
-
+      <h1>CSS Positioning</h1>
+      <h2>What are the differences between static, fixed, relative, and absolute positioning?</h2>
+      <h3>Dec 30, 2014</h3>
+ 
       <p>
-        If you do not specify elements' positioning, HTML elements are positioned static by default, which means the elements occurs where it would normally in the document. 
+        CSS positioning is a useful property to make complex layouts on your page. However, it is not easy to understand how different positioning works, especially for css beginners. 
       </p>
 
-      <P>
-        As you see in Figure 0, I put elements in order of "A", "A1" in "A", "B", and "C". According to the order in the html file, each element occurs in the browser. I did not set any position for all those elements for now.   
-      </P>
-
-
-    <h4>2. Fixed positioning</h4>
       <p>
-        When an element has fixed positioning, it is positioned relative to the browser window, and always stays in the same place even though we scroll down the window. 
+        Let's figure out how to position elements using different positioning. CSS has 4 positioning methods: static, relative, absolute, and fixed positioning. I created an html file and will go through one by one.
+      </p>
       
-      </p>
       <figure>
-       <img src="imgs/fixed_html.png">
-        <figcaption> Figure 2-1. Fixed.css</figcaption>
+        <img src="imgs/positioning_html.png">
+        <figcaption> Figure 0. Positioning.html</figcaption>
       </figure>
 
-      <p>
-        Blue square (C) on the top-right side has fixed position, and you can see it does not move even though I scrolled down.  
-      </p>  
+      
 
-      <figure>
-       <img src="imgs/fixed.png">
-        <figcaption> Figure 2-2. Fixed Positioning</figcaption>
+      <h4>1. Static positioning</h4>
+        <figure>
+        <img src="imgs/static.png">
+        <figcaption> Figure 1. Static Positioning</figcaption>
       </figure>
 
 
+        <p>
+          If you do not specify elements' positioning, HTML elements are positioned static by default, which means the elements occurs where it would normally in the document. 
+        </p>
 
-      <figure>
-       <img src="imgs/fixed1.png">
-        <figcaption> Figure 2-3. Fixed Positioning after scrolling down</figcaption>
-     </figure>
-
-      
-      
-       
-      <p> 
-        However, fixed positioning is not supported well in some mobile browsers.
-      </p>  
+        <P>
+          As you see in Figure 0, I put elements in order of "A", "A1" in "A", "B", and "C". According to the order in the html file, each element occurs in the browser. I did not set any position for all those elements for now.   
+        </P>
 
 
-
-
-
-    <h4>3. Relative positioning</h4>
-      <p> 
-        When you specify "position: relative" in CSS and do not give any extra properties on the element, relative positioning is the same as static positioning.
-      </p>
+      <h4>2. Fixed positioning</h4>
+        <p>
+          When an element has fixed positioning, it is positioned relative to the browser window, and always stays in the same place even though we scroll down the window. 
         
-        However, by using top, right, bottom, and left, you can move the element relative to where it would have occured if it had the static positioning. Let's move the yellow box (A1). 
-      </p>
-      
+        </p>
+        <figure>
+         <img src="imgs/fixed_html.png">
+          <figcaption> Figure 2-1. Fixed.css</figcaption>
+        </figure>
+
+        <p>
+          Blue square (C) on the top-right side has fixed position, and you can see it does not move even though I scrolled down.  
+        </p>  
+
+        <figure>
+         <img src="imgs/fixed.png">
+          <figcaption> Figure 2-2. Fixed Positioning</figcaption>
+        </figure>
+
+
+
+        <figure>
+         <img src="imgs/fixed1.png">
+          <figcaption> Figure 2-3. Fixed Positioning after scrolling down</figcaption>
+       </figure>
+
+        
+        
+         
+        <p> 
+          However, fixed positioning is not supported well in some mobile browsers.
+        </p>  
+
+
+
+
+
+      <h4>3. Relative positioning</h4>
+        <p> 
+          When you specify "position: relative" in CSS and do not give any extra properties on the element, relative positioning is the same as static positioning.
+        </p>
+          
+          However, by using top, right, bottom, and left, you can move the element relative to where it would have occured if it had the static positioning. Let's move the yellow box (A1). 
+        </p>
+        
+        <figure>
+          <img src="imgs/relative_css.png">
+        <figcaption> Figure 3-1. Relative.css</figcaption>
+      </figure>
+        
+        <figure>
+         <img src="imgs/relative.png">
+        <figcaption> Figure 3-2. Relative Positioning</figcaption>
+      </figure>
+       
+
+        <p> 
+          Even though we moved the yellow box to the new location, the yellow box (A1) is considered that it still occupies its original space. 
+        </p>
+
+      <h4>4. Absolute positioning</h4>
+        <p>
+          When we set position: absolute on an element, the element is positioned in relation to the first parent element whch does not have static positioning. If there's no such element, the element with position: absolute gets positioned relative to <html>. 
+        </p>
+
+        <p> Let's first set position:absolute on yellow (A1) and green (B) box. 
+
+
+        <figure>
+          <img src="imgs/absolute0_css.png">
+          <figcaption> Figure 4-1. Absolute.css</figcaption>
+       </figure>
+
+
+        <figure>
+          <img src="imgs/absolute0.png">
+          <figcaption> Figure 4-2. Absolute Positioning</figcaption>
+       </figure>
+       
+        
+
+        <p>
+          Since there is no parent element which has other than static position, the yellow box and the green box moved based on the browser window.
+        </p> 
+
+        <p>
+          However, I want to put the yellow box inside of the red box. To do this, we need to use position:relative and position:absolute. When I set relative position on the red box (A), any elements within A -in this case, yellow box (A1)- will move relative to A.  
+        </p>
+
       <figure>
-        <img src="imgs/relative_css.png">
-      <figcaption> Figure 3-1. Relative.css</figcaption>
-    </figure>
-      
-      <figure>
-       <img src="imgs/relative.png">
-      <figcaption> Figure 3-2. Relative Positioning</figcaption>
-    </figure>
-     
+          <img src="imgs/absolute_css.png">
+          <figcaption> Figure 4-3. Relative-Absolute Positioning.css</figcaption>
+       </figure>
+       
 
-      <p> 
-        Even though we moved the yellow box to the new location, the yellow box (A1) is considered that it still occupies its original space. 
-      </p>
+       <figure>
+          <img src="imgs/absolute.png">
+          <figcaption> Figure 4-4. Relative-Absolute Positioning</figcaption>
+       </figure>
+        
 
-    <h4>4. Absolute positioning</h4>
-      <p>
-        When we set position: absolute on an element, the element is positioned in relation to the first parent element whch does not have static positioning. If there's no such element, the element with position: absolute gets positioned relative to <html>. 
-      </p>
+        
+        <p>
+          As you see in the screen shot, I set relative position on A and absolute position on A1. Contrary to figure 4-2, the yellow box is located within the red box. However, the green box is located in the same place. 
+        </p>
 
-      <p> Let's first set position:absolute on yellow (A1) and green (B) box. 
-
-
-      <figure>
-        <img src="imgs/absolute0_css.png">
-        <figcaption> Figure 4-1. Absolute.css</figcaption>
-     </figure>
-
-
-      <figure>
-        <img src="imgs/absolute0.png">
-        <figcaption> Figure 4-2. Absolute Positioning</figcaption>
-     </figure>
-     
-      
-
-      <p>
-        Since there is no parent element which has other than static position, the yellow box and the green box moved based on the browser window.
-      </p> 
-
-      <p>
-        However, I want to put the yellow box inside of the red box. To do this, we need to use position:relative and position:absolute. When I set relative position on the red box (A), any elements within A -in this case, yellow box (A1)- will move relative to A.  
-      </p>
-
-    <figure>
-        <img src="imgs/absolute_css.png">
-        <figcaption> Figure 4-3. Relative-Absolute Positioning.css</figcaption>
-     </figure>
-     
-
-     <figure>
-        <img src="imgs/absolute.png">
-        <figcaption> Figure 4-4. Relative-Absolute Positioning</figcaption>
-     </figure>
-      
+        
 
       
-      <p>
-        As you see in the screen shot, I set relative position on A and absolute position on A1. Contrary to figure 4-2, the yellow box is located within the red box. However, the green box is located in the same place. 
-      </p>
+    </article>
 
+  
+    <footer>
+      <a href="https://twitter.com/erin_hyejin"><img class="social" src="../imgs/Twitter-icon.png"></a>
 
-
-  </article>
-</section>
+      <a href="https://www.linkedin.com/pub/erin-hyejin-kim/18/626/707"><img class="social" src="../imgs/LinkedIn-icon.png"></a>
+    </footer>
+  </section>
+</html>

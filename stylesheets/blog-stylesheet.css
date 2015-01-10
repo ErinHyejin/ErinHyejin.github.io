@@ -1,32 +1,59 @@
-article{
-	border-left: 3px solid silver;
-	border-right: 3px solid silver;
-	padding: 0 15px;
-	color: #010A0A;
-	font-size: 20px;
-}
-
-header h1{
-	font-weight: bold;
-	text-align: center;	
-	font-family: sans-serif;
-	font-size: 30px;
-}
-
-header h2{
-
-	font-weight: bold;
-	text-align: center;
-	font-family: serif;
-	font-size: 22px;
+article {
+  padding: 20px;
 }
 
 
-
-header h3{
-	padding-right: 70px;
-	text-align: right;
-	font-size: 20px;
+article p {
+  clear: both;
+}
+article figure {
+  width: 100%;
+  padding: 0px;
+  margin: 10px 0px;
+}
+article figure img {
+  display: block;
+  margin: 0 auto;
 }
 
 
+article h1 {
+  font-size: 30px;
+  color: #e70;
+}
+
+article h2 {
+  float: left;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0px;
+  margin: 0px 0px 20px 0px;
+  color: #555;
+}
+
+article h3 {
+  float: right;
+  line-height: 30px;
+  padding: 0px;
+  margin: 0px 0px 20px 0px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+article h4 {
+  clear: both;
+  margin: 40px 0px 20px 0px;
+  padding-bottom: 8px;
+  color: #e70;
+  border-bottom: 1px solid #e70; 
+}
+
+
+article figure figcaption {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  color:#999;
+  font-size: 12px;
+  width: 70%
+}

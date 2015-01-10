@@ -1,0 +1,48 @@
+section#container {
+  width:800px;
+  margin: 0 auto;
+}
+
+header {
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid black;
+  width: 100%;
+  background-color: #FF694B;
+}
+
+section#pic {
+  float: left;
+  margin-top: 20px;
+  width: 60%
+}
+
+section#pic #profile-pic {
+  width: 100%;
+}
+
+section#pic h2 {
+  display: none;
+}
+
+nav li {
+  float: right;
+  border: 1px solid black;
+  clear: right;
+  margin-top: 20px;
+  width: 38%;
+  height: 202px;
+}
+
+nav li#myblogs {
+  background-color: #FFD548;
+}
+
+nav li#myprojects {
+  background-color: #E3E837;
+}
+
+nav li#contact {
+  background-color: #5FFF43;
+}
+
