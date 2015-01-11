@@ -82,22 +82,42 @@
        "hash_name = {}"
        When you want to insert a certain pair in the hash, simply type "hash_name [key] = value". 
       <figure><img src= "imgs/hash0.png"> 
-
       <figcaption>Hash: how many cookies you can it</figcaption></figure>
       <figure><img src= "imgs/hash0_res.png"><figcaption> Result of the code </figcaption></figure>
     </p>
 
     <p>
-    To search specific data, instead of using index, use keys. For example, 
-    If you 
-      찾으려고 하면 index대신 key 로 찾아라. 
-      Let's make a hash to 
-
-    </p>   
-      sort는 array만 가능. key만 뽑아서 알파벳 순 / value만 뽑아서 정렬하고 싶으면 
-      hash.keys or hash.values하고 이 자체가 새로운 array를 만드니까 이걸로 sort하면 됨.   
-      
+    To search specific data, instead of using index, use keys. For example, if you want to call a specific data, call it with a key that matches with the value. Let's look at the hash named "cookie" we created above and search how many cookies we can eat on Tuesday.  
     </p>
+
+     
+    <figure><img src= "imgs/hash1.png"><figcaption>   How to call a specific data?</figcaption></figure>
+
+    <figure><img src= "imgs/hash1_res.png"><figcaption> Result: we can eat five cookies on Tuesday. </figcaption></figure> 
+
+     <p>
+    Since hash doesn't save data in an order, we need to use array when we want to sort data. We can choose keys or values in a hash and make an array in a simple way:
+
+    Type <b>hash.keys</b> or <b>hash.values</b>
+    </p>
+
+    <figure><img src= "imgs/hash2.png"><figcaption>   Making arrays (keys/values) from a hash</figcaption></figure>
+
+    <figure><img src= "imgs/hash2_res.png"><figcaption> Result in Terminal</figcaption></figure> 
+
+    <p>
+    Let's look at the image files "Making arrays (keys/values) from a hash" and the "Result in Terminal." I puts cookie.keys and all the keys are printed in the terminal : Monday, Tuesday, Wednesday. <br>
+    After the blank line, I called cookie.keys[0], which means "call the first datum in the array named cookie.keys." Can you guess the result? As you see the result in terminal, it is "Monday."
+    <br>
+    The next code I requested to the computer is "cookie.values," which selects all the values in the hash "cookie." Can you see the result in terminal? The array has [3, 5, 2]. After creating the array cookie.values, I called the a datum using index[2]. As a result, '2' was printed in terminal.    
+    <br><br>
+    It is easy to use arrays and hashes, isn't it? 
+    There are many methods which make arrays and hashes useful and convenient to use. Hope you enjoy using those two in programming. 
+    <br>
+
+    </p>
+
+
     <footer></footer>
   </article>
 </section>
