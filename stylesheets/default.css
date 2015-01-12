@@ -2,7 +2,7 @@ section#container {
   width:90%;
   display: block;
   margin: 0 auto;
-  font-family: century gothic;
+  font-family: century gothic, helvetica, arial;
 }
 
 
