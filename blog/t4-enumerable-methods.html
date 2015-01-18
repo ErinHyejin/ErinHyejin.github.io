@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+    <title>Erin's Home</title>
+  </head>
+
+  <section id="container">
+    <header>
+      <section id="icon">   
+      <a href="https://twitter.com/erin_hyejin"><img class="social" src="../imgs/twitter.png"></a>   
+    
+      <a href="https://www.linkedin.com/pub/erin-hyejin-kim/18/626/707"><img class="social" src="../imgs/linkedin.png"></a>    
+    
+      <a href="mailto:lvhrhj@gmail.com"><img class="social" src="../imgs/email.png"></a>   
+      </section>
+      <a href="../index.html">
+        <h1>Erin</h1>
+        <h2>Hyejin Kim</h2>
+        <h3>A journey from an education major to a software engineer</h3>
+      </a>
+    </header>
+
+    <article> 
+ 
+      <h1>Enumerable#map</h1>
+      <h2></h2>
+      <h3>1/15/2014</h3>
+ 
+      <h4>What is Enumerable?</h4>
+      <p><b>Enumerable</b> is one of the Ruby's most useful modules. According to the ruby-doc webpage, an enumerable is <br><br>
+      <blockquote> [a] mixin [that] provides collection classes with several traversal and searching methods, and with the ability to sort. The class must provide a method each, which yields successive members of the collection. If Enumerable#max, #min, or #sort is used, the objects in the collection must also implement a meaningful &lt;=&gt; operator, as these methods rely on an ordering between members of the collection. <a href="http://ruby-doc.org/core-2.2.0/Enumerable.html"> from: ruby-doc </a> </blockquote><br>
+
+      In plain English, an enumerable is an array-like, which we can order each element and iterate through the elements. Due to its character, there are many enumerable-specific methods such as map, cycle, and group_by available. We are going to see "#map" today. 
+      </p><br><br>
+
+      <h4>How to use #map?</h4>
+      <p>Map returns a new array, not changing the original collection of the element. When we call map method like below, assuming the collection name is <b>numbers</b>, each element passes the block and the results of the block are added to a new array: <br><br>
+
+      numbers.map{|obj| block} <br><br>
+
+      Let's look at the following examples. 
+      
+      <br><br>
+      
+      <h5>Example 1. Iterate elements in an array applying the operations in the block.</h5><br>
+      (1..5) means [1, 2, 3, 4, 5]. I will use map on this array of numbers.   
+
+      <figure>
+        <img src="imgs/map0.png"> 
+        <figcaption></figcaption>
+      </figure>
+
+      It printed the original array, the result of the map method, and the original array to show the original array was not changed. The result shows each print request:  
+
+      <figure>
+        <img src="imgs/map0_res.png"> 
+        <figcaption></figcaption>
+      </figure>
+      <br><br>
+      <h5>Example 2. "collect" is another name of "map"</h5><br>
+      Let's see the second example. In the curly brackets after map, I put a string "cat". 
+
+      <figure>
+        <img src="imgs/map1.png"> 
+        <figcaption></figcaption>
+      </figure>
+
+      Like "collect" method, this code returs an array of the printed string for five times as I requested.   
+
+      <figure>
+        <img src="imgs/map1_res.png"> 
+        <figcaption></figcaption>
+      </figure>
+      </p>
+
+    </article>
+    <footer>
+  </footer>
+  </section>
+
+</html>
+
