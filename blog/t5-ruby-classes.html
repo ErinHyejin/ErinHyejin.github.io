@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+    <title>Erin's Home</title>
+  </head>
+
+  <section id="container">
+    <header>
+      <section id="icon">   
+      <a href="https://twitter.com/erin_hyejin"><img class="social" src="../imgs/twitter.png"></a>   
+    
+      <a href="https://www.linkedin.com/pub/erin-hyejin-kim/18/626/707"><img class="social" src="../imgs/linkedin.png"></a>    
+    
+      <a href="mailto:lvhrhj@gmail.com"><img class="social" src="../imgs/email.png"></a>   
+      </section>
+      <a href="../index.html">
+        <h1>Erin</h1>
+        <h2>Hyejin Kim</h2>
+        <h3>A journey from an education major to a software engineer</h3>
+      </a>
+    </header>
+
+    <article> 
+ 
+      <h1>Ruby Class Basic</h1>
+      <h2></h2>
+      <h3>Jan 22, 2015</h3>
+ 
+     
+      <p>
+       Ruby beautifully supports object oriented programming. It allows us rebuild the real world in the codes with classes and objects. Let's look at the example code to learn new terms related to class.<br><br>  
+
+      <h4>Creating a class</h4>
+
+      <figure>
+        <img src="imgs/class0.png"> 
+        <figcaption>Figure 1. Initialize an instance variable</figcaption>
+      </figure>
+      
+      - First, class name should be <b>capitalized</b>. We have 'Dog' class here. <br>
+      - Inside a class, the first method is called <b>initialize</b>. Often times, initialize can take arguments and change them as instance variables. <br> 
+      - <b>Instance variable</b> is a variable that can be used inside of a class regardless of methods. To make an instance variable, add '@' in front of a variable. In the above image, we assigned argument name into a instance variable @name. Then, we can call @name in any method within the 'Dog' class when we want to use it in the class. <br><br>
+
+
+      <figure>
+        <img src="imgs/class1.png"> 
+        <figcaption>Figure 2. Methods in a class</figcaption>
+      </figure>
+
+      Looking at the Figure 2. How many methods are inside the 'Dog' class? There are three methods for now, but it is possible to add more methods as many as we want. <br>
+      - The first method is 'initialize', <br>
+      - The second one is 'bark' which prints a string of a sentence, <br>
+      - The last one is 'eat' which takes an argument, item, and print a string of a sentence depending on the item name. <br>
+      - These methods are called <b>instance methods</b>. <br><br>
+
+      <h4>Creating an object and using "new"</h4>
+      At this point, let's see how this class works. I created an object 'mydog' and its name "Lulu."
+      
+      <figure>
+        <img src="imgs/class2.png"> 
+        <figcaption>Figure 3. Object and methods</figcaption>
+      </figure>
+
+      - To make a new object, at the end of the code, type<br> 
+        <b>"object_name = class_name.new(arguments)"</b><br><br>
+
+      - In this Dog class, the argument is a name of an object and we can create an object like this:<br>  
+        <b>mydog = Dog.new("Lulu")</b><br><br>
+
+       <figure>
+        <img src="imgs/lulu_class.png"> 
+      </figure>
+
+      - With an object 'mydog', we can call methods in the Dog class: 'mydog.method.' In the Figure 3 line 23, I called <br>
+      <b>mydog.bark</b> <br>
+      Then the output will be <br>
+      <b>"Lulu barks: Bow wow! Woof woof!" </b>
+      <br>according to the Figure 2 line 9. <br><br>
+
+      - In Figure 3 line 24, I called eat method with an item "soup." If a method inside the class need an argument (or several arguments), make sure you put an argument(arguments) when calling the method. Now you may guess the output of this code: <br>
+      <b> "soup is yummy, but I want chicken jerky." </b><br>
+      According to the Figure 2 line 16, since the item name is not same as "chicken jerky," it returns the else statement.<br><br>
+
+      Using class, it is available to create an object and use several method with ease. It will be also more useful when you build more complex codes. 
+      </p>
+     
+
+
+
+    </article>
+    <footer>
+  </footer>
+  </section>
+
+</html>
+
