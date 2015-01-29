@@ -25,27 +25,72 @@
 
     <article> 
  
-      <h1>Stereotype Threat</h1>
-      <h2>Women in Computer Field</h2>
-      <h3>Jan 28, 2015</h3>
+      <h1>Object Oriented Programming</h1>
+      <h2>More Ruby Class Concepts</h2>
+      <h3>Jan 29, 2015</h3>
  
-      <h4>As a woman, can I really be a successful programmer?</h4>
-      <p>
-        Before I came to California, I never ever thought of programmer as a career for me. Unconsciously, like many other people, I deeply believed that men were much better working with computer and technology.<br><br>
+      <p> Continue to the ruby class basic blog article, I am going to talk more about ruby class, including class methods and class variables, today. <br><br>
 
-        Therefore, it took me a long time to decide to study programming language and algorithm last year. It had been more than a year since I moved to California in March, last year, and I knew that being an engineer was awesome. However, I did not want to take a risk studying totally different subject from what I have learned which was English literature and linguistics. Now, I found that one of the reasons I thought about computer science in that way was 'stereotype threat.'<br><br>
+      <h4>Getter, Setter, Attributes</h4>
+      1. Getter: when you return a variable using a method, getter is used. <br>
 
-        I know the stereotype threat "software engineer is considered as a men profession" affected to my performance and thinking process.Even before trying studying, I was worried about my ability to learn programming and get a job. When I started study, though it was hard to everyone to learn new things, I wanted to give up. Whenever I got stuck, rather thinking "this problem is difficult," I thought that I was not good at studying computer science. <br><br>
- 
-        I found the same worry I have from twitter feed a few days ago. 
-        <figure>
-          <img src="imgs/c6_0.jpg"> 
-          <figcaption>Emma Watson's Twitter Reply</figcaption>
-        </figure>
-        
-        As ane says, sometimes it is very hard to overcome the stereotype threat and we tend to think too much of it. However, Emma's reply is simple, "become an engineer." That's simple response, but very important.<br><br> 
+      <figure>
+        <img src="imgs/oop0.png"> 
+        <figcaption>Figure 1. Getter</figcaption>
+      </figure>
 
-        Recently, Silicon Valley companies hire more women engineers and encourage women to study computer science. The stereotype is not strictly believed. Therefore, my challenge is, just keep going to be an engineer, not feeling frustrated by stereotype that is in my mind. In addition, I will encourage other women who study programming especially in my DBC cohort. When we show the world that there are excellent women engineers like us and there are more women in tech companies, this stereotype threat will be reduced and disappear eventually.  
+      In Figure 1, after initialize method, I create get_name method to return @name. When I call mydog.get_name, it returns "Lulu".  
+
+      2. Setter: when you change a variable, method_name=(argument) is used. Let's look at the example below. 
+
+       <figure>
+        <img src="imgs/oop1.png"> 
+        <figcaption>Figure 2. Setter</figcaption>
+      </figure>
+
+      In line 15, I created mydog named "Lulu", but I called set_name method to change the name to "Brian." Then, when I printed mydog.get_name in line 18, it became "Brian."       (I attached the console below the codes to show the result.) <br><br>
+
+      However, when you want to call or change several variables, creating methods for each takes too much time. To solve the problem, we can use attributes. <br><br>
+
+      3. Attributes: There are three different attributes we can use instead of getter, setter methods. <br>
+      i)  attr_reader :name 
+      ii) attr_writer :name 
+      iii) attr_accessor :name 
+
+      <figure>
+        <img src="imgs/oop2.png"> 
+        <figcaption>Figure 3. Attributes</figcaption>
+      </figure>
+
+      In line 2, I added "attr_reader :name" and commented out get_name method from line 8 to 10. Since attr_reader :variable creates getter method for the variable, we can simply call mydog.name in line 18 to get a result "Lulu." We can add many variables with commas like this: <b>"attr_reader :name, :age, :breed</b><br><br>
+
+      In the same way, "attr_writer" can be used instead of setter method, and "attr_accessor" for both getter and setter methods.<br><br> 
+
+      <h4>Class Method</h4>
+      So far, to call a method in a class, we had to create a new instance (e.g)mydog) and provide information for arguments. However, class method can be called without instances. The difference from instance method is adding 'self.' in front of method name. 
+
+      <figure>
+        <img src="imgs/oop3.png"> 
+        <figcaption>Figure 4. Class Method</figcaption>
+      </figure>
+
+      In figure 4, you may notice a class method, self.make_bark. In line 12, without creating a new instance for Dog class, I call make_bark using class name 'Dog.' Since the method is for the class, we cannot call it with instance_name.method. Assuming we have mydog instance named "Lulu," mydog.make_bark will not work.  
+
+      <h4>Class Variable</h4>
+      Different from instance variable (@variable_name), class variable has '@@' in front of its name (e.g)@@count). Let's look at the code below. 
+
+      <figure>
+        <img src="imgs/oop4.png"> 
+        <figcaption>Figure 5. Class Variable</figcaption>
+      </figure>
+
+      In line 2, there's a class variable @@count = 0. It is returned in self.count method in line 9. Since the count method is a class method, we can call it with the class name Dog. <br><br>
+
+      In line 19 and in line 23, I created mydog instance and yourdog instance each. When I called 'mydog.bark', the result is "lulu bow wow!". <br><br>
+
+      Similar to class methods, we cannot call it with instance_name.method. So, I called Dog.count in line 21 and the result is "1" as terminal shows. <br><br>
+
+      When yourdog and mydog bark one time each in line 24 and 27, the terminal shows @@count value 2 and three as Dog.count result. It means, regardless of instance, the @@count value increases when instance.bark is called. <br><br>  
       </p>
 
     </article>
