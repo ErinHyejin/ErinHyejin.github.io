@@ -58,6 +58,26 @@ article figure figcaption {
   width: 70%
 }
 
+table {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  clear: both;
+}
+
+table th {
+  border-bottom: solid black 2px;
+}
+
+table td {
+  border-bottom: solid #aaa 1px;
+  padding: 10px;
+}
+
+table td.hcol {
+  width: 130px;
+}
+
 .right {
   float: right;
 }
