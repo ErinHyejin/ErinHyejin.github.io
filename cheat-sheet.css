@@ -1,0 +1,22 @@
+body {
+  background: #f1f1f1;
+  color: black;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+header h1{
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 4px double #295273;
+}
+
+.table {
+  width: 60%;
+  margin-left: 150px;
+}
+
+.contents {
+
+}
