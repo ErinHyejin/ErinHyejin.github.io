@@ -1,0 +1,49 @@
+div {
+  margin: 10px auto;
+  width: 840px;
+  height: 100px;
+}
+
+#path {
+  background-image: url("game_imgs/background.jpg");
+  background-size: 840px 100px;
+}
+
+#message {
+  height: 30px;
+  width: 600px;
+  border: 0px;
+  font-size: 20px;
+}
+
+#master {
+  position: relative;
+  top: 40px;
+  width: 30px;
+}
+
+#lulu {
+  position: relative;
+  top: 40px;
+  width: 30px;
+}
+
+#picture{
+  width: 840px;
+}
+
+#status, #eat, #sniff, #play, #finish{
+  width: 840px;
+  display: block;
+  margin: 0px auto;
+}
+
+#type_here {
+  margin: 10px auto;
+  display: block;
+  width: 600px;
+  height: 40px;
+  border: solid #5af 2px;
+  font-size: 20px;
+  color:red;
+}

@@ -30,6 +30,15 @@
 
 
     <article>
+      <h2>How to create prototypes?
+      </h2>
+      <p>Creating a prototype is as simple as defining a new function (called the object-constructor function). This simply involves typing the ‘function’ keyword, your function name, and populating the function with your properties and methods.<br><br> 
+
+      To actually create an object from this prototype, simply use the ‘new’ keyword.<br><br> 
+
+      Here are examples to clearly illustrate this:<br><br>
+      </p>
+
       <xmp>
         function coder(name, skill, experience) {
           this.name = name;
@@ -37,9 +46,53 @@
           this.experience = experience;
         }
 
+        var firstCoder = new coder(“Erin”, “ruby”, “1 year”)
+        var secondCoder = new coder(“Sahil”, “JavaScript”, “2 year”)
       </xmp>
     </article>
 
+    <article>
+      <h2>How to add properties?
+      </h2>
+      <p>If your object already exists, you can easily add properties to that object. Simply type in the object name, followed by the dot operator, followed by the name of some new property you want to add, and set it equal to whatever value that property should have.<br><br>
+      
+      Here is an example to illustrate:
+      </p>
+      <xmp>
+      secondCoder.gender = “male”
+      </xmp>
+
+      <p>
+      It adds the property “gender” to the secondCoder only, not other objects. For example, firstCoder does not have the property “gender”.
+      </p>
+    </article>
+
+    <article>
+    <h2>How to add methods?
+    </h2>
+    <p>If your object already exists, you can easily add methods to that object. Simply type in the object name, followed by the dot operator, followed by the name of some new method you want to add, and set it equal to whatever function that method should perform.<br><br> 
+
+    Here is an example to illustrate:<br><br>
+    </p>
+
+    <xmp>
+    firstCoder.introduction = function () {
+    return this.name + "has " + this.experience + “ experience in ” + this.skill + “.”;
+    };
+
+    </xmp>
+
+    <p>*note: If you want to modify the prototypes themselves, you should use the ‘prototype’ property to add new properties or methods. If you do this, any objects created from this modified prototype will inherit these new properties or methods.
+    </p>
+
+    <xmp>
+    coder.prototype.gender = “male”
+
+    coder.prototype.introduction = function () {
+    return this.name + "has " + this.experience + “ experience in ” + this.skill + “.”;
+    };
+    </xmp>
+    </article>
    </section>
    </body>
    
