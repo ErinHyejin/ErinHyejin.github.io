@@ -18,3 +18,18 @@ body {
 .right_column {
     float: right;
 }
+
+.clear-all {
+    clear: both;
+}
+
+.content-table {
+    width: 100%;
+}
+
+.head {
+    font-weight: bold;
+}
+.first-line td {
+    padding-top: 25px;
+}
