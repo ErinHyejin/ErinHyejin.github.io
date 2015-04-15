@@ -6,11 +6,12 @@ body {
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: normal;
     color: gray;
     line-height: 20px;
-    margin: 5px 0px;
+    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .contact {
