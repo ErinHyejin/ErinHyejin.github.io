@@ -2,19 +2,23 @@ body {
     padding: 20px;
     line-height: 23px;
     font-family: "Tahoma";
+    font-size: 12px;
 }
 
 h2 {
     font-size: 25px;
     font-weight: normal;
     color: gray;
+    line-height: 20px;
+    margin: 5px 0px;
 }
 
 .contact {
-    padding-top:36px;
+    padding-top:26px;
     float: right;
     text-align: right;
     line-height: 20px;
+    font-size: 14px;
 }
 
 .left_column {
@@ -39,15 +43,17 @@ hr {
 
 .head {
     font-weight: bold;
-    width: 400px;
+    width: 210px;
 }
 
 td {
     vertical-align: top;
+    padding: 3px;
 }
 
 .city {
     color: grey;
+    width: 140px;
 }
 
 .first-line td {
