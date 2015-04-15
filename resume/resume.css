@@ -5,6 +5,11 @@ body {
     font-size: 12px;
 }
 
+.content {
+    width: 700px;
+    margin: 0 auto;
+}
+
 h2 {
     font-size: 22px;
     font-weight: normal;
@@ -15,11 +20,16 @@ h2 {
 }
 
 .contact {
-    padding-top:26px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     float: right;
     text-align: right;
     line-height: 20px;
     font-size: 14px;
+}
+
+section {
+    clear: both;
 }
 
 .left_column {
@@ -36,6 +46,7 @@ h2 {
 
 hr {
     margin: 20px 0px;
+    clear: both;
 }
 
 .content-table {
@@ -44,7 +55,7 @@ hr {
 
 .head {
     font-weight: bold;
-    width: 210px;
+    width: 250px;
 }
 
 td {
