@@ -1,6 +1,5 @@
 body {
-    padding: 20px;
-    line-height: 23px;
+    line-height: 18px;
     font-family: "Tahoma";
     font-size: 12px;
 }
@@ -28,6 +27,9 @@ h2 {
     font-size: 14px;
 }
 
+.header-line {
+    margin-bottom: 5px;
+}
 section {
     clear: both;
 }
@@ -38,6 +40,7 @@ section {
 
 .right_column {
     float: right;
+    width: 300px;
 }
 
 .clear-all {
@@ -45,7 +48,7 @@ section {
 }
 
 hr {
-    margin: 20px 0px;
+    margin: 20px 0px 20px 0px;
     clear: both;
 }
 
@@ -55,12 +58,12 @@ hr {
 
 .head {
     font-weight: bold;
-    width: 250px;
+    width: 270px;
 }
 
 td {
     vertical-align: top;
-    padding: 3px;
+    padding: 0px 5px 0px 5px;
 }
 
 .city {
