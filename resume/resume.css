@@ -1,5 +1,7 @@
 body {
-    padding: 1em;
+    padding: 20px;
+    line-height: 23px;
+    font-family: "Helvetica Neue";
 }
 
 .contact {
@@ -9,4 +11,10 @@ body {
     line-height: 20px;
 }
 
+.left_column {
+    float: left;
+}
 
+.right_column {
+    float: right;
+}
