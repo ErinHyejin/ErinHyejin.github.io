@@ -1,11 +1,17 @@
 body {
     padding: 20px;
     line-height: 23px;
-    font-family: "Helvetica Neue";
+    font-family: "Tahoma";
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: normal;
+    color: gray;
 }
 
 .contact {
-    padding-top:40px;
+    padding-top:36px;
     float: right;
     text-align: right;
     line-height: 20px;
@@ -23,13 +29,27 @@ body {
     clear: both;
 }
 
+hr {
+    margin: 20px 0px;
+}
+
 .content-table {
     width: 100%;
 }
 
 .head {
     font-weight: bold;
+    width: 400px;
 }
+
+td {
+    vertical-align: top;
+}
+
+.city {
+    color: grey;
+}
+
 .first-line td {
     padding-top: 25px;
 }
