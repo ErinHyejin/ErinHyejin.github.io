@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="css/ml-social-buttons.css" type="text/css" charset="utf-8" />
 </head>
 <body>
   <div id="index-banner" class="parallax-container">
@@ -113,14 +114,32 @@
               <span class="card-title">총 동문회</span>
             </div>
             <div class="card-content">
-              <ul>
-                <li>
-                  회장: 김용민 (전기/82)
+              <ul class="collection no-border">
+                <li class="collection-item avatar no-border">
+                  <i class="material-icons circle">person</i>
+                  <span class="title">김용민</span>
+                  <p>회장 (전기 82)</p>
+                  <span class="secondary-content">
+                    <ul class="soc">
+                      <li><a class="soc-twitter" href="https://twitter.com/nlpenguin" target="_blank"></a></li>
+                      <li><a class="soc-linkedin" href="https://www.linkedin.com/in/will-hohyon-ryu-77b63624" target="_blank"></a></li>
+                      <li><a class="soc-email1 soc-icon-last" href="mailto:hohyon@gmail.com" target="_blank"></a></li>
+                    </ul>
+                  </span>
+                </li>
+                <li class="collection-item avatar no-border">
+                  <i class="material-icons circle">person</i>
+                  <span class="title">이종현</span>
+                  <p>부회장 (영문/문정 99)</p>
+                  <span class="secondary-content">
+                    <ul class="soc">
+                      <li><a class="soc-facebook" href="https://twitter.com/nlpenguin" target="_blank"></a></li>
+                      <li><a class="soc-linkedin" href="https://www.linkedin.com/in/will-hohyon-ryu-77b63624" target="_blank"></a></li>
+                      <li><a class="soc-email1 soc-icon-last" href="mailto:hohyon@gmail.com" target="_blank"></a></li>
+                    </ul>
+                  </span>
                 </li>
               </ul>
-            </div>
-            <div class="card-action">
-              <a href="#">Contact Us</a>
             </div>
           </div>
         </div>
@@ -132,44 +151,57 @@
               <span class="card-title">96학번 이하 동문회</span>
             </div>
             <div class="card-content">
-              <ul>
-                <li>
-                  회장: 유호현 (영문/문정/99)
+
+              <ul class="collection no-border">
+                <li class="collection-item avatar no-border">
+                  <img src="profile/hohyon.jpeg" alt="" class="circle">
+                  <span class="title">유호현</span>
+                  <p>회장 (영문/문정 99)</p>
+                  <span class="secondary-content">
+                    <ul class="soc">
+                      <li><a class="soc-twitter" href="https://twitter.com/nlpenguin" target="_blank"></a></li>
+                      <li><a class="soc-linkedin" href="https://www.linkedin.com/in/will-hohyon-ryu-77b63624" target="_blank"></a></li>
+                      <li><a class="soc-email1 soc-icon-last" href="mailto:hohyon@gmail.com" target="_blank"></a></li>
+                    </ul>
+                  </span>
                 </li>
-                <li>
-                  부회장: 이종현 (/), 정지원 (/)
+                <li class="collection-item avatar no-border">
+                  <i class="material-icons circle">person</i>
+                  <span class="title">이종현</span>
+                  <p>부회장 (영문/문정 99)</p>
+                  <span class="secondary-content">
+                    <ul class="soc">
+                      <li><a class="soc-facebook" href="https://twitter.com/nlpenguin" target="_blank"></a></li>
+                      <li><a class="soc-linkedin" href="https://www.linkedin.com/in/will-hohyon-ryu-77b63624" target="_blank"></a></li>
+                      <li><a class="soc-email1 soc-icon-last" href="mailto:hohyon@gmail.com" target="_blank"></a></li>
+                    </ul>
+                  </span>
                 </li>
-                <li>
-                  총무: 김혜진 (영문/교육/04)
-                </li>
+
               </ul>
             </div>
-            <div class="card-action">
-              <a href="mailto:hohyon@gmail.com">Contact Us</a>
-            </div>
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
-  </div>
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/moment.js"></script>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/moment.js"></script>
 
-</body>
-</html>
+  </body>
+  </html>
 
-<script type="text/javascript">
-  $(".event-date").each(function( i ) {
-    var date = $(this).text();
-    var relative = moment(date).fromNow();
-    var absolute = moment(date).format("LLL");
+  <script type="text/javascript">
+    $(".event-date").each(function( i ) {
+      var date = $(this).text();
+      var relative = moment(date).fromNow();
+      var absolute = moment(date).format("LLL");
 
-    $(this).html(absolute + " <span class='grey-text'>" + relative + "</span>");
-  })
-</script>
+      $(this).html(absolute + " <span class='grey-text'>" + relative + "</span>");
+    })
+  </script>
 

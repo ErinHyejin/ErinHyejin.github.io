@@ -108,3 +108,7 @@ a {
 h6 {
   font-size:20px;
 }
+
+.no-border {
+  border:0px !important;
+}
