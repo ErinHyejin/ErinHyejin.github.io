@@ -6,6 +6,7 @@
  * Made By MaterializeCSS.com
  */
 
+
 body, html {
   height: 100%;
 }
@@ -84,4 +85,26 @@ footer.page-footer {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+/* Event card */
+
+.event-address {
+  color: grey !important;
+}
+
+.event-location {
+  font-size: 20px;
+}
+
+.event-date {
+  font-size: 15px;
+}
+
+a {
+  color: #40A;
+}
+
+h6 {
+  font-size:20px;
 }
