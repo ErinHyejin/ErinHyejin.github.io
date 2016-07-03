@@ -109,14 +109,6 @@ $(".event-date").each(function( i ) {
   font-size: 15px;
 }
 
-a {
-  color: #40A;
-}
-
-h6 {
-  font-size:20px;
-}
-
 .no-border {
   border:0px !important;
 }
