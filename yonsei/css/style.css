@@ -87,14 +87,6 @@ footer.page-footer {
   transform: translateY(-50%);
 }
 
-$(".event-date").each(function( i ) {
-  var date = $(this).text();
-  var relative = moment(date).fromNow();
-  var absolute = moment(date).format("LLL");
-
-  $(this).html(absolute + " <span class='grey-text'>" + relative + "</span>");
-})
-
 /* Event card */
 
 .event-address {
