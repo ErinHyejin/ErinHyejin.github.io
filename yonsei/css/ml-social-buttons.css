@@ -57,10 +57,10 @@
     display:block;
     position: relative;
     z-index: 1;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
-    font-size: 13px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 11px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
@@ -121,6 +121,10 @@
 .soc-google:hover {
     background-color: #ed5241;
 }
+.soc-twitter:hover {
+    background-color: #61bbf2;
+}
+
 .soc-twitter:hover {
     background-color: #61bbf2;
 }
